@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Bolaji Bakare</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showSection('about')" class="nav-link">About</a></li>
+                <li><a href="#" onclick="showSection('projects')" class="nav-link">Projects</a></li>
+                <li><a href="#" onclick="showSection('contact')" class="nav-link">Contact</a></li>
+                <li><a href="https://github.com/Harehood100/personal-portfolio-.git" target="_blank" rel="noopener noreferrer" class="nav-link">GitHub</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <div class="hero-content">
+                        <h1>Hi, I'm Bolaji Bakare</h1>
+                        <p class="subtitle">Passionate Web Developer & Builder</p>
+                        <p class="description">I create beautiful, responsive web applications that solve real-world problems. Let's build something amazing together.</p>
+                        <div class="cta-buttons">
+                            <button class="btn btn-primary" onclick="showSection('projects')">View My Work</button>
+                            <button class="btn btn-secondary" onclick="showSection('contact')">Get In Touch</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="portfolio.jpeg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>I'm a passionate web developer, constantly learning and building projects I care about. I specialize in creating responsive, user-friendly websites and applications using modern web technologies.</p>
+                        <p>My journey in tech started with a curiosity about how things work on the web. Since then, I've honed my skills in front-end development, always focusing on clean code and great user experiences.</p>
+                        <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge with the community.</p>
+                    </div>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <h4>HTML & CSS</h4>
+                                <p>Semantic markup and modern CSS layouts</p>
+                            </div>
+                            <div class="skill-item">
+                                <h4>JavaScript</h4>
+                                <p>DOM manipulation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-1"></div>
+                        <div class="project-info">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-stack e-commerce solution built with React and Node.js featuring product catalog, shopping cart, and payment integration.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-2"></div>
+                        <div class="project-info">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management application with real-time updates, user authentication, and project organization features.</p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">CSS Grid</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-3"></div>
+                        <div class="project-info">
+                            <h3>Weather Dashboard</h3>
+                            <p>A weather application that provides real-time weather data, forecasts, and location-based services with a beautiful responsive interface.</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-4"></div>
+                        <div class="project-info">
+                            <h3>Portfolio Website</h3>
+                            <p>A modern, responsive portfolio website showcasing projects and skills with smooth navigation and elegant design.</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-5"></div>
+                        <div class="project-info">
+                            <h3>Social Media Dashboard</h3>
+                            <p>A dashboard for managing multiple social media accounts with analytics, scheduling, and engagement tracking features.</p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">Charts.js</span>
+                                <span class="tag">APIs</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image bg-gradient-6"></div>
+                        <div class="project-info">
+                            <h3>Blog Platform</h3>
+                            <p>A content management system for blogging with markdown support, comments, categories, and a beautiful reading experience.</p>
+                            <div class="project-tags">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Markdown</span>
+                                <span class="tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="link-btn">Live Demo</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="link-btn">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Get In Touch</h2>
+                <p class="section-subtitle">Have a project in mind? Let's work together!</p>
+                <div class="contact-content">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:your.email@example.com">bolajibakare498@gmail.com</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+1234567890">+2349071106562</a></p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Location</h3>
+                            <p>Lagos, Nigeria</p>
+                        </div>
+                        <div class="contact-item">
+                            <h3>Social Media</h3>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/bakare-bolaji-4b0b163b3/" target="_blank" class="social-icon">LinkedIn</a>
+                                <a href="https://github.com/Harehood100" target="_blank" class="social-icon">GitHub</a>
+                                <a href="https://x.com/iam_harehood?s=21" target="_blank" class="social-icon">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
