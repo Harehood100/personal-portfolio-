@@ -562,8 +562,16 @@ section h2 {
    =========================== */
 @media (max-width: 768px) {
     /* Navigation */
+    .navbar .container {
+        padding: 1rem 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
     .nav-links {
-        display: none;
+        display: none !important;
         position: absolute;
         top: 70px;
         left: 0;
@@ -577,7 +585,7 @@ section h2 {
     }
 
     .nav-links.active {
-        display: flex;
+        display: flex !important;
     }
 
     .nav-link {
@@ -590,7 +598,7 @@ section h2 {
     }
 
     .hamburger {
-        display: flex;
+        display: flex !important;
     }
 
     /* Hero Section */
