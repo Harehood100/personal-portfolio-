@@ -5,7 +5,7 @@
 // Show specific section and hide others
 function showSection(sectionId) {
     // Get all sections
-    const sections = document.querySelectorAll('.section');
+    const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
 
     // Hide all sections
