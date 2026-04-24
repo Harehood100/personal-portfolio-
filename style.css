@@ -102,6 +102,19 @@ body {
     background-color: var(--text-dark);
     margin: 5px 0;
     transition: var(--transition);
+    transform-origin: center;
+}
+
+.hamburger span.active:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 10px);
+}
+
+.hamburger span.active:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger span.active:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* ===========================
@@ -560,10 +573,20 @@ section h2 {
         padding: 2rem;
         gap: 1rem;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
     }
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-link {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav-link:last-child {
+        border-bottom: none;
     }
 
     .hamburger {
@@ -652,6 +675,15 @@ section h2 {
         font-size: 0.95rem;
     }
 
+    .cta-buttons {
+        gap: 0.75rem;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
     section h2 {
         font-size: 1.5rem;
     }
@@ -667,5 +699,9 @@ section h2 {
     .form-group input,
     .form-group textarea {
         font-size: 16px;
+    }
+
+    .hero-image img {
+        max-width: 200px;
     }
 }
