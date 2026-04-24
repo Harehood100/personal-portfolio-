@@ -561,6 +561,19 @@ section h2 {
    Responsive Design
    =========================== */
 @media (max-width: 768px) {
+    .hero-image {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
     /* Navigation */
     .navbar .container {
         padding: 1rem 1.5rem;
