@@ -61,8 +61,10 @@ document.addEventListener('DOMContentLoaded', function() {
     navLinksItems.forEach(link => {
         link.addEventListener('click', function() {
             navLinks.classList.remove('active');
-            const spans = hamburger.querySelectorAll('span');
-            spans.forEach(span => span.classList.remove('active'));
+            if (hamburger) {
+                const spans = hamburger.querySelectorAll('span');
+                spans.forEach(span => span.classList.remove('active'));
+            }
         });
     });
 
